@@ -1,0 +1,23 @@
+## 基于图层概念的绘图过程
+
+layer的组成
+1. mapping
+2. scaling
+3. geometric object
+4. coordate transform
+
+### 使用d2替换p1中的数据：
+		p1 %+% d2
+
+将零散的统计图统一至一种语法的描述中
+
+使用transform 修改数据框中的数据
+
+### errorbar
+
+geom 参数设置成 errorbar 可以绘制误差条图
+
+### plot 中绘制误差条图的方法
+
+		plot(perf,avg="vertical",spread.estimate="stddev",col="black",lty=3, lwd=3)
+
